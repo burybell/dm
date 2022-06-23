@@ -8,14 +8,15 @@ import (
 	"context"
 	"database/sql"
 	"database/sql/driver"
-	"dm/i18n"
 	"sync"
+
+	"github.com/burybell/dm/i18n"
 )
 
 // 发版标记
-var version 	= "8.1.2.114"
-var build_date 	= "2022.03.03"
-var svn			= "10275"
+var version = "8.1.2.114"
+var build_date = "2022.03.03"
+var svn = "10275"
 
 var globalDmDriver = newDmDriver()
 
